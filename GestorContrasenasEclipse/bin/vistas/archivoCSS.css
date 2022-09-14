@@ -1,0 +1,68 @@
+
+
+Button { -fx-background-color: #008287;
+         -fx-border-color: #FFFFFF;
+         -fx-border-width: 2;
+         -fx-text-fill: #FFFFFF;
+         -fx-font-family: "Helvetica";
+         /*-fx-font-style: italic;*/
+         -fx-font-size: 20px;
+         -fx-background-radius: 10 10 10 10;
+         -fx-border-radius: 10 10 10 10;
+}
+#btCopiar{ -fx-font-size: 16px;
+}
+#btActualizarLista{   -fx-font-size: 16px;
+}
+#btGenerarContra{  -fx-font-size: 14px;
+}
+
+Button:pressed { -fx-background-color: #FFFFFF;
+	            -fx-text-fill: #000000;
+	            -fx-font-weight: bold;
+}
+
+TextField {   -fx-font-family: "Helvetica";
+                -fx-font-size: 16px;
+
+                -fx-background-radius: 10 10 10 10;
+                -fx-border-radius: 10 10 10 10;
+                -fx-border-width: 2;
+}
+
+PasswordField{      -fx-font-family: "Helvetica";
+                     -fx-font-size: 16px;
+
+                     -fx-background-radius: 10 10 10 10;
+                     -fx-border-radius: 10 10 10 10;
+                     -fx-border-width: 2;
+}
+AnchorPane {  -fx-background-color:#ccffcc
+}
+SplitPane{   fx-background-color:#ccffcc
+}
+Label {  -fx-font-size: 16px;
+          -fx-font-family: "Helvetica";
+
+}
+CheckBox{     -fx-font-family: "Arial";
+              -fx-font-size: 15px;
+             -font-weight: bold;
+}
+
+ListView{     -fx-background-radius: 10 10 10 10;
+              -fx-border-radius: 10 10 10 10;
+             -fx-border-width: 2;
+            -fx-font-family: "Helvetica";
+             -fx-font-size: 13px;
+             -font-weight: bold;
+}
+TextArea{
+            -fx-background-radius: 10 10 10 10;
+              -fx-border-radius: 10 10 10 10;
+             -fx-border-width: 2;
+            -fx-font-family: "Helvetica";
+             -fx-font-size: 13px;
+             -font-weight: bold;
+}
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="654.0" stylesheets="@archivoCSS.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuPrincipalControler">
+   <children>
+      <ListView fx:id="listViewLista" layoutX="50.0" layoutY="82.0" onMouseClicked="#on_Mous_seleccionarCon" prefHeight="250.0" prefWidth="218.0" />
+      <Label layoutX="50.0" layoutY="55.0" text="Selecciona un archivo de la lista." />
+      <Button fx:id="btActualizarLista" layoutX="98.0" layoutY="344.0" mnemonicParsing="false" onAction="#onAc_Actualizar" text="Actualizar Lista" />
+      <Button layoutX="33.0" layoutY="425.0" mnemonicParsing="false" onAction="#on_Ac_Agregar" prefHeight="50.0" prefWidth="132.0" text="Agregar" />
+      <Button layoutX="183.0" layoutY="425.0" mnemonicParsing="false" onAction="#on_Ac_Modificar" prefHeight="50.0" prefWidth="143.0" text="Modificar" />
+      <Button layoutX="348.0" layoutY="425.0" mnemonicParsing="false" onAction="#onAc_Eliminar" prefHeight="50.0" prefWidth="132.0" text="Eliminar" />
+      <Button layoutX="504.0" layoutY="425.0" mnemonicParsing="false" onAction="#onAc_Salir" prefHeight="42.0" prefWidth="107.0" text="Salir" />
+      <TextField fx:id="txtTitulo" layoutX="328.0" layoutY="46.0" prefHeight="39.0" prefWidth="227.0" />
+      <TextField fx:id="txtContrasena_Visible" layoutX="328.0" layoutY="116.0" prefHeight="39.0" prefWidth="227.0" />
+      <TextArea fx:id="txtDescrip" layoutX="325.0" layoutY="245.0" onKeyPressed="#onKey_caracteresRestantes" onMouseClicked="#onMouse_establecerNumCaractRestantes" prefHeight="128.0" prefWidth="227.0" wrapText="true" />
+      <Label layoutX="332.0" layoutY="383.0" text="Caracteres restantes: " />
+      <Label fx:id="lbCaracteresRestantes" layoutX="496.0" layoutY="383.0" text="200" />
+      <Label layoutX="332.0" layoutY="218.0" text="Descripción: " />
+      <Label layoutX="332.0" layoutY="92.0" text="Contraseña" />
+      <Label layoutX="331.0" layoutY="23.0" text="Título: " />
+      <Button fx:id="btCopiar" layoutX="337.0" layoutY="165.0" mnemonicParsing="false" onAction="#onAct_Copiar" prefHeight="39.0" prefWidth="73.0" text="Copiar" />
+      <CheckBox fx:id="cBoxVisualice" layoutX="436.0" layoutY="176.0" mnemonicParsing="false" onAction="#onActi_VisualizarCon" text="Visualizar contraseña" />
+      <PasswordField fx:id="txtcontrasena_Oculto" layoutX="328.0" layoutY="116.0" prefHeight="39.0" prefWidth="227.0" />
+   </children>
+</AnchorPane>
